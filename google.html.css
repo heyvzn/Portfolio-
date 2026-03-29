@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab Task 6 - Display Property</title>
+
+<style>
+
+/* General */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container{
+    width: 500px;
+    margin: 20px auto;
+}
+
+/* 1. Two textboxes (display: block) */
+.block-input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+/* 2. Paragraph and buttons inline-block */
+.inline-container{
+    margin-top: 20px;
+}
+
+.inline-text{
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+}
+
+.inline-btn{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+/* 3. Google section */
+.google-section{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.google-logo{
+    width: 200px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.search-box{
+    display: block;
+    width: 80%;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+/* Challenge Forms */
+.challenge{
+    margin-top: 50px;
+}
+
+/* Sign Up Form */
+.signup input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.signup button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+}
+
+/* Uber Form */
+.uber input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.uber .btn{
+    display: inline-block;
+    width: 48%;
+    padding: 10px;
+    border: none;
+}
+
+.request{
+    background-color: black;
+    color: white;
+}
+
+.schedule{
+    background-color: lightgray;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- 1. Block Textboxes -->
+    <h3>Textboxes (Block)</h3>
+    <input type="text" placeholder="Name" class="block-input">
+    <input type="email" placeholder="Email" class="block-input">
+
+    <!-- 2. Inline-Block Paragraph and Buttons -->
+    <div class="inline-container">
+        <p class="inline-text">
+            Thanks for chatting with our customer support.
+            Would you like to take our quick survey?
+        </p>
+        <button class="inline-btn">Yes</button>
+        <button class="inline-btn">No</button>
+    </div>
+
+    <!-- 3. Google Search Form -->
+    <div class="google-section">
+        <!-- Download Google logo and save as google.png -->
+        <img src="google.png" alt="Google Logo" class="google-logo">
+        <input type="text" placeholder="Search Google or type a URL" class="search-box">
+    </div>
+
+    <!-- Challenge Exercises -->
+
+    <div class="challenge">
+
+        <h3>8d. Sign Up Form</h3>
+        <div class="signup">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <input type="email" placeholder="Email">
+            <button>Sign Up</button>
+        </div>
+
+        <h3 style="margin-top:40px;">8e. Uber Request-a-Ride Form</h3>
+        <div class="uber">
+            <h2>Request a ride now</h2>
+            <input type="text" placeholder="Enter pickup location">
+            <input type="text" placeholder="Enter destination">
+            <button class="btn request">Request now</button>
+            <button class="btn schedule">Schedule for later</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
